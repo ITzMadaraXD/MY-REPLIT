@@ -1,6 +1,6 @@
 # Discord Moderation Bot
 
-_This is a discord moderation bot made by Fayaz and built on top of `discord.js`._
+_This is a discord moderation bot made by Grezaski and built on top of `discord.js`._
 
 ## SetUp Guide
 

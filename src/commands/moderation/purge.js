@@ -1,14 +1,9 @@
-const {
-  SlashCommandBuilder,
-  EmbedBuilder,
-  PermissionFlagsBits,
-  ChatInputCommandInteraction,
-  Client,
-} = require("discord.js");
+const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits, ChatInputCommandInteraction, Client, } = require("discord.js");
 
 module.exports = {
   memberPerms: PermissionFlagsBits.ManageMessages,
   botPerms: PermissionFlagsBits.ManageMessages,
+  cooldown: 5,
   data: new SlashCommandBuilder()
     .setName("purge")
     .setDescription("Delete a number of messages")

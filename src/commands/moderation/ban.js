@@ -1,14 +1,9 @@
-const {
-  SlashCommandBuilder,
-  EmbedBuilder,
-  PermissionFlagsBits,
-  ChatInputCommandInteraction,
-  Client,
-} = require("discord.js");
+const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits, ChatInputCommandInteraction, Client, } = require("discord.js");
 
 module.exports = {
   memberPerms: PermissionFlagsBits.BanMembers,
   botPerms: PermissionFlagsBits.BanMembers,
+  cooldown: 5,
   data: new SlashCommandBuilder()
     .setName("ban")
     .setDescription("Ban a given user from the server.")

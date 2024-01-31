@@ -1,14 +1,9 @@
-const {
-  SlashCommandBuilder,
-  EmbedBuilder,
-  PermissionFlagsBits,
-  ChatInputCommandInteraction,
-  Client,
-} = require("discord.js");
+const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits, ChatInputCommandInteraction, Client, } = require("discord.js");
 
 module.exports = {
   memberPerms: PermissionFlagsBits.ModerateMembers,
   botPerms: PermissionFlagsBits.ModerateMembers,
+  cooldown: 5,
   data: new SlashCommandBuilder()
     .setName("unmute")
     .setDescription("Untimeout / Unmute a user.")

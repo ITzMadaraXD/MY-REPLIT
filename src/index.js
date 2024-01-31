@@ -16,6 +16,9 @@ const client = new Client({
     GatewayIntentBits.GuildMessages,
   ],
   partials: [Partials.Channel, Partials.GuildMember],
+  presence: {
+    activities: [{name: `Give ⭐`, type: 0}],
+    status: "online" }
 });
 client.commands = new Collection();
 client.config = require("./config.js");

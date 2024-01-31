@@ -1,14 +1,9 @@
-const {
-  SlashCommandBuilder,
-  EmbedBuilder,
-  ChatInputCommandInteraction,
-  Client,
-  PermissionFlagsBits,
-} = require("discord.js");
+const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits, ChatInputCommandInteraction, Client, } = require("discord.js");
 
 module.exports = {
   memberPerms: PermissionFlagsBits.ManageChannels,
   botPerms: PermissionFlagsBits.ManageChannels,
+  cooldown: 5,
   data: new SlashCommandBuilder()
     .setName("slowmode")
     .setDescription("Set the slowmode for the channel")

@@ -1,14 +1,9 @@
-const {
-  SlashCommandBuilder,
-  EmbedBuilder,
-  PermissionFlagsBits,
-  ChatInputCommandInteraction,
-  Client,
-} = require("discord.js");
+const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits, ChatInputCommandInteraction, Client, } = require("discord.js");
 
 module.exports = {
   memberPerms: PermissionFlagsBits.KickMembers,
   botPerms: PermissionFlagsBits.KickMembers,
+  cooldown: 5,
   data: new SlashCommandBuilder()
     .setName("kick")
     .setDescription("Kick a given user from the server.")

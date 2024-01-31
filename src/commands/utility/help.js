@@ -1,9 +1,4 @@
-const {
-  SlashCommandBuilder,
-  EmbedBuilder,
-  ChatInputCommandInteraction,
-  Client,
-} = require("discord.js");
+const { SlashCommandBuilder, EmbedBuilder, ChatInputCommandInteraction, Client, } = require("discord.js");
 const buildHelpEmbed = require("../../utils/helpEmbed");
 
 module.exports = {

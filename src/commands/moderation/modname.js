@@ -1,14 +1,10 @@
-const {
-  SlashCommandBuilder,
-  EmbedBuilder,
-  PermissionFlagsBits,
-  ChatInputCommandInteraction,
-  Client,
-} = require("discord.js");
+const { SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits, ChatInputCommandInteraction, Client, } = require("discord.js");
+
 
 module.exports = {
   memberPerms: PermissionFlagsBits.ManageNicknames,
   botPerms: PermissionFlagsBits.ManageNicknames,
+  cooldown: 5,
   data: new SlashCommandBuilder()
     .setName("modname")
     .setDescription("Moderate a users name to - Moderated Nickname 1234.")

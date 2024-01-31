@@ -1,15 +1,21 @@
 # Discord Moderation Bot
 
-_This is a discord moderation bot made by Fayaz and built on top of `discord.js`._
+_This is a discord moderation bot made by Grezaski and built on top of `discord.js`._
 
-## SetUp Guide
-
-**First** Rename the `.example.env` to `.env`. Then replace the `Token` and `ClientID` with your bots token and client ID respectively.\*
+## Startup
+- Change `.env.example` to `.env`.
+- Enter the following details to it:
+```
+Token="YOUR BOT TOKEN"
+ClientID="YOUR BOT ID"
+```
+- Save the file. Open Terminal in the Project Directory.
+- Run:
+```
+npm i
+node .
+```
+- You are done.
 
 ### Customisation
-
 _To customise your bot, go into `src/config.js` and edit the data in there._
-
-### Start Up
-
-_To start the bot, you can either type `npm start` to start the bot using nodemon or just do `node .`_

@@ -3,11 +3,11 @@
 _This is a discord moderation bot made by Grezaski and built on top of `discord.js`._
 
 ## Startup
-- Change `.env.example` to `.env`.
+- Change `.env.` to `.env`.
 - Enter the following details to it:
 ```
-Token="YOUR BOT TOKEN"
-ClientID="YOUR BOT ID"
+Token="MTIwNTM1NTA2NDIxMDg5MDkyMg.GKElfV.cNGoegi5j3wphmBi-A2fzHYs-s43QewCiMtkoc"
+ClientID="1205355064210890922"
 ```
 - Save the file. Open Terminal in the Project Directory.
 - Run:
